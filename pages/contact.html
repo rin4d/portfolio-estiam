@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Rinad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar-container"></header>
+<script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
+
+  <section class="section contact">
+    <h2>Me contacter 📬</h2>
+    <p>Vous avez des questions?</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Ton nom" required>
+      <input type="email" placeholder="Ton email" required>
+      <textarea placeholder="Ton message..." rows="6" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="contact-links">
+
+      <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a><br>
+      <a href="https://github.com/rinad" target="_blank"> Mon GitHub</a><br>
+    </div>
+  </section>
+
+</body>
+</html>

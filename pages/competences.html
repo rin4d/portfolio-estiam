@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compétences – Rinad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar-container"></header>
+<script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
+
+  <section class="section">
+    <h2>Mes Compétences 🧠</h2>
+
+    <div class="competence-block">
+      <h3>💻 Langages & Frameworks</h3>
+      <ul>
+        <li>🧡 HTML5 / CSS3</li>
+        <li>⚡ JavaScript (vanilla)</li>
+        <li>🐍 Python / Django</li>
+        <li>🗂️ SQL / MySQL</li>
+        <li>💻 VS Code</li>
+        <li>🌐 Git / GitHub</li>
+        <li>📁 Linux (Ubuntu)</li>
+        <li>🎨 Figma / UI Design</li>
+      </ul>
+    </div>
+
+
+
+  </section>
+
+</body>
+</html>

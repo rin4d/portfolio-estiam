@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes Projets – Rinad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar-container"></header>
+<script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
+
+  <section class="section">
+    <h2>Mes Projets</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="images/oups-la-boulette.png" alt="Oups la Boulette">
+        <div class="project-content">
+          <h3>Oups la Boulette</h3>
+          <span class="project-type">Projet personnel</span>
+          <p>Site de jeux interactifs pour animer des soirées entre ami·es. 100% designé et codé par moi.</p>
+          <p class="project-tools">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="https://github.com/rinad/oups-la-boulette" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/oups-la-boulette.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/sab-system.png" alt="SAB System">
+        <div class="project-content">
+          <h3>SAB System</h3>
+          <span class="project-type">Projet en entreprise</span>
+          <p>Interface web pour gérer les chaînes, serveurs et clients d’hôtels, développée avec Django. Utilisé en production.</p>
+          <p class="project-tools">Python · Django · PostgreSQL · HTML · CSS</p>
+          <div class="project-links">
+            <a href="#" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/sab-system.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/oups-la-boulette.png" alt="Oups la Boulette">
+        <div class="project-content">
+          <h3>Oups la Boulette</h3>
+          <span class="project-type">Projet personnel</span>
+          <p>Site de jeux interactifs personnalisés pour soirées entre ami·es, avec plusieurs modes funs comme action/vérité, débats, etc.</p>
+          <p class="project-tools">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="https://github.com/rinad/oups-la-boulette" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/oups-la-boulette.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/photographe.png" alt="Site Photographe">
+        <div class="project-content">
+          <h3>Site Photographe</h3>
+          <span class="project-type">Projet client</span>
+          <p>Site vitrine réalisé pour une photographe freelance. Présentation de ses prestations, contact et galerie photo (en cours).</p>
+          <p class="project-tools">HTML · CSS · Django</p>
+          <div class="project-links">
+            <a href="#" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/photographe.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/mini-jeux.png" alt="Mini-jeux Bootcamp">
+        <div class="project-content">
+          <h3>Mini-jeux Bootcamp</h3>
+          <span class="project-type">Projet de formation</span>
+          <p>Série de petits jeux codés pendant un bootcamp pour apprendre les bases du JS : morpion, pierre-papier-ciseaux, quiz, etc.</p>
+          <p class="project-tools">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="#" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/mini-jeux.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/cadeau-clem.png" alt="Cadeau Clem">
+        <div class="project-content">
+          <h3>Cadeau Interactif</h3>
+          <span class="project-type">Projet personnel</span>
+          <p>Site interactif réalisé comme cadeau d'anniversaire. Expérience sensible et émotionnelle à travers textes, images et interactions.</p>
+          <p class="project-tools">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="#" class="btn-outline" target="_blank">GitHub</a>
+            <a href="docs/cadeau-clem.pdf" class="btn-outline" target="_blank">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+  <img src="images/telecommande.png" alt="Télécommande interactive">
+  <div class="project-content">
+    <h3>Télécommande interactive</h3>
+    <span class="project-type">Projet en entreprise</span>
+    <p>Interface web conçue pour permettre aux client·es d’hôtels de contrôler leur télévision depuis leur téléphone. Accessibilité pensée pour différents handicaps.</p>
+    <p class="project-tools">HTML · CSS · JavaScript · Elixir · Phoenix</p>
+    <div class="project-links">
+      <a href="#" class="btn-outline" target="_blank">GitHub</a>
+      <a href="docs/telecommande.pdf" class="btn-outline" target="_blank">Documentation</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+</body>
+</html>
