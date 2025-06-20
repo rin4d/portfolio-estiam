@@ -1,7 +1,7 @@
 /* ------------------- FOND GALAXIE ANIMÉ ------------------- */
 html, body {
-  height: 100vh;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,6 +16,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body.fixed {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .stars-layer {

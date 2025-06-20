@@ -4,36 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact – Rinad</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="../styles/style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Fond étoilé -->
+  <div class="stars-layer stars-medium"></div>
+  <div class="stars-layer stars-big"></div>
 
-<header id="navbar-container"></header>
-<script>
-  fetch("navbar.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar-container").innerHTML = data;
-    });
-</script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">A propos</a></li>
+        <li><a href="projets.html">Missions-E5</a></li>
+        <li><a href="#">Projets-E6</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-  <section class="section contact">
-    <h2>Me contacter 📬</h2>
-    <p>Vous avez des questions?</p>
+  <section class="section contact-page">
+    <h2>Me contacter</h2>
+    <p class="contact-sub">Vous pouvez me contacter ici si vous avez la moindre question ou demande.</p>
 
     <form class="contact-form">
-      <input type="text" placeholder="Ton nom" required>
-      <input type="email" placeholder="Ton email" required>
-      <textarea placeholder="Ton message..." rows="6" required></textarea>
-      <button type="submit">Envoyer</button>
+      <input type="text" placeholder="Entrez votre nom et prénom.." required>
+      <input type="email" placeholder="Entrez votre email..." required>
+      <textarea placeholder="Entrez votre message..." rows="6" required></textarea>
+      <button type="submit" class="btn-outline">Envoyer</button>
     </form>
-
-    <div class="contact-links">
-
-      <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a><br>
-      <a href="https://github.com/rinad" target="_blank"> Mon GitHub</a><br>
-    </div>
   </section>
 
 </body>

@@ -1,0 +1,111 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+  color: #fdf9f6;
+}
+body.scrollable {
+  overflow-y: auto;
+}
+
+.section.projets-e5 {
+  padding: 120px 30px 60px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.section.projets-e5 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.projets-subtitle {
+  font-size: 1.1rem;
+  color: #bcbcbc;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(132, 233, 250, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  background-color: rgba(132, 233, 250, 0.07);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(132, 233, 250, 0.1);
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #fdfdfd;
+}
+
+.project-type {
+  font-size: 0.9rem;
+  color: #84e9fa;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #dcdcdc;
+}
+
+.project-tools {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-links a.btn-outline {
+  border: 2px solid #84e9fa;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #84e9fa;
+  transition: 0.3s ease;
+  font-weight: bold;
+  background: transparent;
+}
+
+.project-links a.btn-outline:hover {
+  background-color: #84e9fa;
+  color: #0d1b2a;
+}

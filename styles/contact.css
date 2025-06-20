@@ -1,0 +1,75 @@
+/* ------------------- CONTACT PAGE ------------------- */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  z-index: 1;
+  padding: 40px 20px;
+}
+
+.contact-page h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #fdf9f6;
+}
+
+.contact-sub {
+  font-size: 1.1rem;
+  color: #c7c7c7;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #84e9fa;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fdf9f6;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  backdrop-filter: blur(4px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b3b3b3;
+}
+
+.contact-form button {
+  align-self: flex-end;
+}
+
+/* ------------------- BOUTONS GÉNÉRAUX ------------------- */
+
+a.btn, .btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #84e9fa;
+  color: #84e9fa;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  font-weight: bold;
+  background: transparent;
+}
+
+a.btn:hover, .btn-outline:hover {
+  background-color: #84e9fa;
+  color: #0d1b2a;
+}

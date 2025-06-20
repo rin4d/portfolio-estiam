@@ -1,0 +1,220 @@
+/* ------------------- FOND ÉTOILÉ ANIMÉ ------------------- */
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+  color: #fdf9f6;
+  overflow-x: hidden;
+}
+
+.stars-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat;
+  background-position: 0 0;
+  pointer-events: none;
+  z-index: -1;
+  animation: moveStars 100s linear infinite;
+}
+
+.stars-big {
+  background-image: url('../assets/images/star-big.png');
+  opacity: 0.4;
+  animation-duration: 250s;
+}
+
+.stars-medium {
+  background-image: url('../assets/images/star-medium.png');
+  opacity: 0.25;
+  animation-duration: 400s;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 5000px; }
+}
+
+/* ------------------- NAVIGATION INTERNE (liens en haut de page) ------------------- */
+.apropos-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.apropos-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #84e9fa;
+  border: 1px solid #84e9fa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.apropos-nav a:hover {
+  background-color: rgba(132, 233, 250, 0.1);
+  transform: scale(1.05);
+}
+
+/* ------------------- SECTIONS DE TEXTE GÉNÉRALES ------------------- */
+.apro-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(132, 233, 250, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.apro-section h2 {
+  color: #fdf9f6;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.apro-section p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ------------------- INTRODUCTION / PRÉSENTATION ------------------- */
+.intro-text {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* ------------------- COMPÉTENCES ------------------- */
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 20px;
+}
+
+.competence-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #84e9fa;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  color: #fdfdfd;
+  font-size: 1rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.competence-card:hover {
+  background-color: rgba(132, 233, 250, 0.15);
+  transform: scale(1.03);
+  color: #84e9fa;
+}
+
+/* ------------------- ÉCOLE & ENTREPRISE ------------------- */
+.school-company-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.school-card, .company-card {
+  flex: 1 1 400px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(132, 233, 250, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+
+.school-card:hover, .company-card:hover {
+  transform: translateY(-5px);
+}
+
+.logo-card {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+/* ------------------- BTS SIO ------------------- */
+.bts-intro {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.bts-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.bts-column {
+  flex: 1 1 300px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(132, 233, 250, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.bts-column h3 {
+  font-size: 1.4rem;
+  color: #84e9fa;
+  margin-bottom: 10px;
+}
+
+.bts-column h4 {
+  font-size: 1.1rem;
+  color: #fdf9f6;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.bts-column ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.badge {
+  background-color: #84e9fa;
+  color: #0d1b2a;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  margin-left: 8px;
+}
